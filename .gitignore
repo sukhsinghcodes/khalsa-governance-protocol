@@ -1,0 +1,83 @@
+# ---------------------------------------
+# Core Node / JavaScript / TypeScript
+# ---------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.cache/
+tmp/
+temp/
+
+# ---------------------------------------
+# Hardhat / Foundry / Solidity
+# ---------------------------------------
+artifacts/
+cache/
+types/
+coverage/
+coverage.json
+coverage.lcov
+
+# Broadcasts & Deployments (Foundry)
+broadcast/
+deployments/
+
+# Sphinx / Docs build
+_site/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# ---------------------------------------
+# OS Files
+# ---------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ---------------------------------------
+# IDE / Editor files
+# ---------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ---------------------------------------
+# Environment configs
+# ---------------------------------------
+.env
+.env.*
+*.local
+
+# ---------------------------------------
+# Logs
+# ---------------------------------------
+*.log
+logs/
+
+# ---------------------------------------
+# Misc
+# ---------------------------------------
+*.bak
+*.tmp
+*.old
+
+# Exclude private keys or mnemonic files
+private_key.txt
+secrets.json
+mnemonic.txt
+
+# ---------------------------------------
+# Allow important things
+# ---------------------------------------
+!whitepaper/
+!whitepaper/**/*.md
+!whitepaper/diagrams/*.svg
+
+!contracts/
+!scripts/

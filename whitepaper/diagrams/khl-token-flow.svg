@@ -1,0 +1,70 @@
+<svg width="980" height="320" viewBox="0 0 980 320" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill:#ffffff; }
+    .card {
+    fill:#f4f8ff;
+    stroke:#2563eb;
+    stroke-width:1.6;
+    rx:14;
+    ry:14;
+    }
+    .title {
+    font-family: system-ui, sans-serif;
+    font-size:20px;
+    font-weight:700;
+    fill:#0f172a;
+    }
+    .label {
+    font-family: system-ui, sans-serif;
+    font-size:15px;
+    fill:#0f172a;
+    }
+    .small {
+    font-family: system-ui, sans-serif;
+    font-size:13px;
+    fill:#64748b;
+    }
+    .arrow {
+    stroke:#2563eb;
+    stroke-width:2;
+    fill:none;
+    marker-end:url(#arrowhead);
+    }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+      refX="8" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#2563eb" />
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="980" height="320" class="bg" />
+
+  <text x="320" y="40" class="title">KHL Token Lifecycle (L2)</text>
+
+  <!-- Invite -->
+  <rect x="40" y="90" width="200" height="90" class="card" />
+  <text x="60" y="120" class="label">Whitelist / Invite</text>
+  <text x="60" y="145" class="small">Wallet added by Governance</text>
+
+  <!-- Buy Only -->
+  <rect x="270" y="90" width="220" height="90" class="card" />
+  <text x="290" y="120" class="label">Buy-Only Contract</text>
+  <text x="290" y="145" class="small">User pays 10 USDT per KHL</text>
+
+  <!-- Mint KHL -->
+  <rect x="530" y="90" width="200" height="90" class="card" />
+  <text x="550" y="120" class="label">Mint KHL (L2)</text>
+  <text x="550" y="145" class="small">Non-transferable balance</text>
+
+  <!-- Treasury -->
+  <rect x="760" y="90" width="200" height="90" class="card" />
+  <text x="780" y="120" class="label">Seva Treasury Safe</text>
+  <text x="780" y="145" class="small">Receives stablecoins</text>
+
+  <!-- Arrows -->
+  <line x1="240" y1="135" x2="270" y2="135" class="arrow" />
+  <line x1="490" y1="135" x2="530" y2="135" class="arrow" />
+  <line x1="730" y1="135" x2="760" y2="135" class="arrow" />
+
+</svg>

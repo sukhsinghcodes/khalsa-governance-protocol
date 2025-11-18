@@ -1,0 +1,93 @@
+<svg width="980" height="460" viewBox="0 0 980 460" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill:#ffffff; }
+    .card {
+    fill:#f4f8ff;
+    stroke:#2563eb;
+    stroke-width:1.6;
+    rx:14;
+    ry:14;
+    }
+    .title {
+    font-family: system-ui, sans-serif;
+    font-size:20px;
+    font-weight:700;
+    fill:#0f172a;
+    }
+    .section {
+    font-family: system-ui, sans-serif;
+    font-size:14px;
+    font-weight:600;
+    fill:#2563eb;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    }
+    .label {
+    font-family: system-ui, sans-serif;
+    font-size:15px;
+    fill:#0f172a;
+    }
+    .small {
+    font-family: system-ui, sans-serif;
+    font-size:13px;
+    fill:#64748b;
+    }
+    .arrow {
+    stroke:#2563eb;
+    stroke-width:2;
+    fill:none;
+    marker-end:url(#arrowhead);
+    }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10"
+      refX="8" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#2563eb" />
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="980" height="460" class="bg" />
+
+  <text x="300" y="40" class="title">Safe Architecture · KGP</text>
+
+  <text x="60" y="80" class="section">Ethereum L1</text>
+  <text x="60" y="260" class="section">Arbitrum L2</text>
+
+  <!-- L1 Governance Safe -->
+  <rect x="60" y="100" width="260" height="100" class="card" />
+  <text x="80" y="135" class="label">L1 Governance Safe</text>
+  <text x="80" y="160" class="small">Panj Pyare-style multisig</text>
+  <text x="80" y="180" class="small">Controls KhalsaRootL1</text>
+
+  <!-- KhalsaRootL1 -->
+  <rect x="360" y="100" width="260" height="100" class="card" />
+  <text x="380" y="135" class="label">KhalsaRootL1</text>
+  <text x="380" y="160" class="small">MAX_SUPPLY &amp; authorised L2</text>
+  <text x="380" y="180" class="small">Config &amp; migration anchor</text>
+
+  <!-- L2 Governance Safe -->
+  <rect x="60" y="280" width="260" height="110" class="card" />
+  <text x="80" y="315" class="label">L2 Governance Safe</text>
+  <text x="80" y="340" class="small">Executes votes, manages whitelist,</text>
+  <text x="80" y="360" class="small">issuers, upgrades.</text>
+
+  <!-- L2 Seva Treasury Safe -->
+  <rect x="360" y="280" width="260" height="110" class="card" />
+  <text x="380" y="315" class="label">L2 Seva Treasury Safe</text>
+  <text x="380" y="340" class="small">Holds stablecoins; only spends</text>
+  <text x="380" y="360" class="small">on governance execution.</text>
+
+  <!-- Other L2 contracts -->
+  <rect x="660" y="280" width="260" height="110" class="card" />
+  <text x="680" y="315" class="label">L2 Contracts</text>
+  <text x="680" y="340" class="small">KHL Token, Buy-Only,</text>
+  <text x="680" y="360" class="small">Khalsa ID, Issuer Registry</text>
+
+  <!-- Arrows -->
+  <line x1="320" y1="150" x2="360" y2="150" class="arrow" />
+  <line x1="490" y1="200" x2="490" y2="280" class="arrow" />
+
+  <line x1="320" y1="335" x2="360" y2="335" class="arrow" />
+  <line x1="620" y1="335" x2="660" y2="335" class="arrow" />
+
+</svg>
