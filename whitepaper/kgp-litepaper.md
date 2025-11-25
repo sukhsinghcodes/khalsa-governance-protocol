@@ -20,6 +20,43 @@ KGP delivers:
 
 KGP aligns with Sikh ethics: *Sarbat da Bhala* (universal welfare), *Seva* (selfless service), *Sat* (truth), *Nimrata* (humility), and collective decision making.
 
+```mermaid
+flowchart TB
+    subgraph IDLayer[Identity Layer]
+        KID[Khalsa ID (SBT)]
+        RSBT[Role SBTs<br>- Issuers<br>- Maintainers<br>- Committee Roles<br>- Membership]
+    end
+
+    subgraph TokenLayer[Token Layer]
+        KHL[KHL Token<br>(Non-transferable)]
+        BO[Buy-Only Minter<br>Fixed 10 USDT]
+    end
+
+    subgraph GovLayer[Governance Layer]
+        SNAP[Snapshot (v1)]
+        MACI[MACI (v2)]
+        GOVSAFE[L2 Governance Safe<br>Panj Pyare Multisig]
+    end
+
+    subgraph TreasuryLayer[Treasury Layer]
+        TRESAFE[Seva Treasury Safe<br>Multisig]
+    end
+
+    IDLayer --> SNAP
+    IDLayer --> MACI
+
+    BO --> KHL
+    BO --> TRESAFE
+
+    KHL --> SNAP
+    KHL --> MACI
+
+    SNAP --> GOVSAFE
+    MACI --> GOVSAFE
+
+    GOVSAFE --> TRESAFE
+```
+
 ---
 
 # 2. Motivation
